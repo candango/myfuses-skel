@@ -3,23 +3,20 @@
     "http://www.candango.org/myfuses/dtd/myfuses.dtd">
 
 <myfuses>
-	<circuits>
-		<circuit alias="pessoa" path="controle/pessoa" parent="" />
-		<circuit alias="m_pessoa" path="modelo/pessoa" parent="" />
-		<circuit alias="v_pessoa" path="visao/pessoa" parent="" />
-		<circuit alias="m_uf" path="modelo/uf" parent="" />
-	</circuits>
+    <circuits>
+        <circuit alias="skell" path="skell/" parent="" />
+    </circuits>
     
     
     <classes>
     </classes>
     
-	<parameters>
-        <parameter name="defaultFuseaction" value="pessoa.listar" />
+    <parameters>
+        <parameter name="defaultFuseaction" value="skell.start" />
         <!-- you may want to change this to development mode: -->
         <parameter name="mode" value="development" />
         <!-- change this to something more secure: -->
-        <parameter name="password" value="skeleton" />
+        <parameter name="password" value="tutorial" />
         <!--
             These are all default values that can be overridden:
         <parameter name="fuseactionVariable" value="fuseaction" />
@@ -31,34 +28,34 @@
         -->
         <parameter name="parseWithComments" value="false" />
         
-        <parameter name="characterEncoding" value="iso-8859-1"/>
+        <parameter name="characterEncoding" value="UTF-8"/>
         
         <parameter name="debug" value="false"/>
         
         <parameter name="tools" value="false"/>
-	</parameters> 
+    </parameters> 
 
-	<globalfuseactions>
-		<preprocess>
-		</preprocess>
-		<postprocess>
-		</postprocess>
-	</globalfuseactions>
-	
-	<plugins>
-		<phase name="preProcess">
-		</phase>
-		<phase name="preFuseaction">
-		</phase>
-		<phase name="postFuseaction">
-		</phase>
-		<phase name="fuseactionException">
-		</phase>		
-		<phase name="postProcess">
-		</phase>
-		<phase name="processError">
-			
-		</phase>
-	</plugins>
+    <globalfuseactions>
+        <preprocess>
+        </preprocess>
+        <postprocess>
+        </postprocess>
+    </globalfuseactions>
+    
+    <plugins>
+        <phase name="preProcess">
+        </phase>
+        <phase name="preFuseaction">
+        </phase>
+        <phase name="postFuseaction">
+        </phase>
+        <phase name="fuseactionException">
+        </phase>        
+        <phase name="postProcess">
+        </phase>
+        <phase name="processError">
+            
+        </phase>
+    </plugins>
 
 </myfuses>
