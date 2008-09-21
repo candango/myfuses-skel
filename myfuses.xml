@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE myfuses PUBLIC "-//MYFUSES//DTD MYFUSES 1.0 Strict//EN"
+    "http://www.candango.org/myfuses/dtd/myfuses.dtd">
+
+<myfuses>
+    <circuits>
+        <circuit alias="skell" path="skell/" parent="" />
+    </circuits>
+    
+    
+    <classes>
+    </classes>
+    
+    <parameters>
+        <parameter name="defaultFuseaction" value="skell.start" />
+        <!-- you may want to change this to development mode: -->
+        <parameter name="mode" value="development" />
+        <!-- change this to something more secure: -->
+        <parameter name="password" value="tutorial" />
+        <!--
+            These are all default values that can be overridden:
+        <parameter name="fuseactionVariable" value="fuseaction" />
+        <parameter name="precedenceFormOrUrl" value="form" />
+        <parameter name="scriptFileDelimiter" value="php" />
+        <parameter name="maskedFileDelimiters" value="htm,cfm,cfml,php,php4,asp,aspx" />
+        <paramater name="strictMode" value="false" />
+        <parameter name="allowImplicitCircuits" value="false" />
+        -->
+        <parameter name="parseWithComments" value="false" />
+        
+        <parameter name="characterEncoding" value="UTF-8"/>
+        
+        <parameter name="debug" value="false"/>
+        
+        <parameter name="tools" value="false"/>
+    </parameters> 
+
+    <globalfuseactions>
+        <preprocess>
+        </preprocess>
+        <postprocess>
+        </postprocess>
+    </globalfuseactions>
+    
+    <plugins>
+        <phase name="preProcess">
+        </phase>
+        <phase name="preFuseaction">
+        </phase>
+        <phase name="postFuseaction">
+        </phase>
+        <phase name="fuseactionException">
+        </phase>        
+        <phase name="postProcess">
+        </phase>
+        <phase name="processError">
+            
+        </phase>
+    </plugins>
+
+</myfuses>
