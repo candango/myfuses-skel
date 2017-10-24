@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE myfuses PUBLIC "-//MYFUSES//DTD MYFUSES 1.0 Strict//EN"
-    "http://www.candango.org/myfuses/dtd/myfuses.dtd">
-
+<!DOCTYPE myfuses PUBLIC "-//MYFUSES//DTD MYFUSES 0.9.9 Strict//EN"
+        "http://www.candango.org/publish/formats/0_9_9/myfuses.dtd">
 <myfuses>
+
     <circuits>
         <circuit alias="skell" path="skell/" parent="" />
     </circuits>
-    
-    
+
     <classes>
     </classes>
-    
+
     <parameters>
         <parameter name="defaultFuseaction" value="skell.start" />
         <!-- you may want to change this to development mode: -->
@@ -18,7 +17,7 @@
         <!-- change this to something more secure: -->
         <parameter name="password" value="tutorial" />
         <!--
-            These are all default values that can be overridden:
+        These are all default values that can be overridden:
         <parameter name="fuseactionVariable" value="fuseaction" />
         <parameter name="precedenceFormOrUrl" value="form" />
         <parameter name="scriptFileDelimiter" value="php" />
@@ -27,13 +26,10 @@
         <parameter name="allowImplicitCircuits" value="false" />
         -->
         <parameter name="parseWithComments" value="false" />
-        
-        <parameter name="characterEncoding" value="UTF-8"/>
-        
+        <parameter name="characterEncoding" value="utf-8"/>
         <parameter name="debug" value="false"/>
-        
         <parameter name="tools" value="false"/>
-    </parameters> 
+    </parameters>
 
     <globalfuseactions>
         <preprocess>
@@ -41,7 +37,7 @@
         <postprocess>
         </postprocess>
     </globalfuseactions>
-    
+
     <plugins>
         <phase name="preProcess">
         </phase>
@@ -50,11 +46,10 @@
         <phase name="postFuseaction">
         </phase>
         <phase name="fuseactionException">
-        </phase>        
+        </phase>
         <phase name="postProcess">
         </phase>
         <phase name="processError">
-            
         </phase>
     </plugins>
 
