@@ -24,6 +24,8 @@
         <parameter name="maskedFileDelimiters" value="htm,cfm,cfml,php,php4,asp,aspx" />
         <paramater name="strictMode" value="false" />
         <parameter name="allowImplicitCircuits" value="false" />
+        <parameter name="redirect" value="false" />
+        <parameter name="ignoreFuseactionVariable" value="false" />
         -->
         <parameter name="parseWithComments" value="false" />
         <parameter name="characterEncoding" value="utf-8"/>
